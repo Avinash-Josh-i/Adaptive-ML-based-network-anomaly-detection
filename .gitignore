@@ -1,0 +1,54 @@
+#libraries
+PcapPlusPlus/
+
+# Output data
+flows.csv
+feature_extract/data/*.csv
+feature_extract/bin/*.csv
+feature_extract/data/*
+!feature_extract/data/.gitkeep
+
+# Build artifacts
+feature_extract/*.obj
+feature_extract/bin/*.exe
+*.ilk
+*.pdb
+*.idb
+*.log
+*.tlog
+*.recipe
+
+Debug/
+Release/
+x64/
+build/
+.vs/
+.vscode/
+
+# Allow committed binary (team run-only)
+!feature_extract/bin/main.exe
+
+
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+minor/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# ML / Data
+*.pkl
+*.json
+*.csv
+*.log
+*.h5
+*.pt
